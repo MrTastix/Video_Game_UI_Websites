@@ -1,0 +1,32 @@
+/* Variables */
+:root {
+  /* font styles */
+  --title-font: 'Rajdhani', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+
+  /* text colours */
+  --text-color: #fff;
+  --alt-text-color: #141414;
+
+  /* theme colours */
+  --bg-color: #141414;
+  --red: #EA3546;
+  --orange: #f4951f;
+  --green: #d0Ed57;
+  --purple: #662E9B;
+}
+
+// Lighten a colour
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Darken a colour
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Media queries
+$laptop: 1200px;
+$desktop: 1600px;
+$xl-desktop: 2000px;
